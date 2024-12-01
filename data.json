@@ -1,0 +1,68 @@
+{
+  "allow": [
+    {
+      "name": "Virat Kholi",
+      "age": "35",
+      "country": "IND",
+      "average": "57",
+      "century": "51",
+      "id": "4d08"
+    },
+    {
+      "name": "AB Devilliers",
+      "age": "37",
+      "country": "SA",
+      "average": "56",
+      "century": "25",
+      "id": "ecc0"
+    },
+    {
+      "name": "Rohit Sharma",
+      "age": "37",
+      "country": "IND",
+      "average": "48",
+      "century": "31",
+      "id": "6b03"
+    },
+    {
+      "name": "Steve Smith",
+      "age": "35",
+      "country": "AUS",
+      "average": "44",
+      "century": "25",
+      "id": "782f"
+    },
+    {
+      "name": "KL Rahul",
+      "age": "32",
+      "country": "IND",
+      "average": "49",
+      "century": "7",
+      "id": "d2b8"
+    },
+    {
+      "name": "Rishab Pant",
+      "age": "27",
+      "country": "IND",
+      "average": "33",
+      "century": "1",
+      "id": "c72d"
+    },
+    {
+      "name": "Jos Buttler",
+      "age": "32",
+      "country": "ENG",
+      "average": "39",
+      "century": "11",
+      "id": "3255"
+    },
+    {
+      "name": "MS Dhoni",
+      "age": "44",
+      "country": "IND",
+      "average": "50",
+      "century": "10",
+      "id": "8bdc"
+    }
+  ]
+}

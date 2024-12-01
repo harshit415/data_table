@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Data Table</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 10px;
+        }
+
+        #nav {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 15px;
+            background-color: orange;
+            flex-wrap: wrap;
+        }
+
+        #nav article div a {
+            text-decoration: none;
+            color: black;
+            font-size: medium;
+            padding: 5px 10px;
+        }
+
+        #nav article div a:hover {
+            color: red;
+        }
+
+        table {
+            background-color: lavender;
+            color: black;
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: black;
+            color: white;
+        }
+
+        form {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        form label, form input {
+            width: 200px;
+        }
+
+        form button {
+            padding: 10px;
+            background-color: orange;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            width: 200px;
+        }
+
+        form button:hover {
+            background-color: darkorange;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            #nav {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            table {
+                font-size: 12px;
+            }
+
+            th, td {
+                padding: 6px;
+            }
+
+            form label, form input {
+                font-size: 14px;
+            }
+
+            form button {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            #nav {
+                text-align: center;
+            }
+
+            form {
+                gap: 5px;
+            }
+
+            table {
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+<body onload="getdata()">
+    <section id="nav">
+        <article>
+            <div><a href="index.html">Dashboard</a></div>
+        </article>
+        <article>
+            <div><a href="dataTable.html">DataTable</a></div>
+        </article>
+        <article>
+            <div><a href="logout.html">LogOut</a></div>
+        </article>
+    </section>
+    <center>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Country</th>
+                    <th>Average</th>
+                    <th>Century</th>
+                    <th>Delete</th>
+                    <th>Edit</th>
+                </tr>
+            </thead>
+            <tbody id="output">
+                <!-- Dynamic Content -->
+            </tbody>
+        </table>
+    </center>
+    <form id="MYform">
+        <label for="name">Name</label>
+        <input type="text" id="name">
+        
+        <label for="age">Age</label>
+        <input type="text" id="age">
+        
+        <label for="country">Country</label>
+        <input type="text" id="country">
+        
+        <label for="average">Average</label>
+        <input type="text" id="average">
+        
+        <label for="century">Century</label>
+        <input type="text" id="century">
+        
+        <button onclick="return insert()">Insert</button>
+    </form>
+    <div id="update"></div>
+    <script src="dataTable.js"></script>
+</body>
+</html>

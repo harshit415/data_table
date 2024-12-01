@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: blue;
+        }
+        #myForm{
+            margin-top: 170px;
+            width: 350px;
+            height: 450px;
+            background-color: white;
+            border-radius: 10px;
+            align-items: center;
+          
+
+        }
+       #myForm input{
+        display: grid;
+        grid-template-columns: auto;
+        width: 250px;
+        height: 30px;
+       
+        
+       }
+       #myForm #logo{
+      margin-left: -160px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-weight: lighter;
+      
+     
+       }
+       #myForm #btn{
+          width: 250px;
+          height: 30px;
+          background-color:blue;
+          color: white;
+       }
+       #myForm #p{
+        color: blue;
+       }
+    </style>
+</head>
+<body>
+    <center><form action="index.html" id="myForm"><br>
+        <div id="logo"><h3>LogIn</h3></div>
+       
+        <input type="text" id="username" name="name" placeholder="Enter User Name" required>
+        <br>
+      
+    
+        
+      
+        
+        <input type="password" id="password" name="password"  placeholder="Enter Password" minlength="6">
+        <br>
+      
+       
+      
+        <button id="btn" type="submit">LogIn</button>
+        <p>Already have account an account?<p id="p">Login Now</p></p>
+      </form>
+    </center>
+      
+      <div id="errorMessages" style="color: red;"></div>
+      <script src="login.js"></script>
+</body>
+</html>
